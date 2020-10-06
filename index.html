@@ -16,7 +16,8 @@
 						<ul>
                                                         <li><a href="#intro">Strona główna</a></li>
                                                         <li><a href="#one">Semestr II</a></li>
-														<li><a href="#two">Książki</a></li>
+														<li><a href="#two">Semestr III</a></li>
+														<li><a href="#seven">Książki</a></li>
                                                         <li><a href="#Contact">Kontakt</a></li>
 						</ul>
 					</nav>
@@ -45,7 +46,7 @@
                                                         <div class="content">
 								<div class="inner">
                                                                         <h2>Semestr II</h2>
-                                                                        <p>"Studia nie są obowiązkowe" ~S. Kotyra</p>
+                                                                        <p>"Studia nie są obowiązkowe"</p>
 									<ul class="actions">
                                                                                 <li><a href="https://drive.google.com/open?id=12AzjCXHnS4GKQPhLXT77KGqCtaFHgFur" class="button">Analiza matematyczna</a></li>
 									</ul>
@@ -76,13 +77,60 @@
 						</section>
 
 					</section>
-					<section id="two" class="wrapper style2-alt spotlights">
+					<!-- Two -->
+					<section id="two" class="wrapper style2 spotlights">
+						<section>
+                                                        <a href="#" class="image"><img src="./site/images/16.jpg" alt="100" data-position="30% 100%" /></a>
+                                                        <div class="content">
+								<div class="inner">
+                                                                        <h2>Semestr III</h2>
+                                                                        <p>"Placeholder na cytat"</p>
+									<ul class="actions">
+                                                                                <li><a href="https://drive.google.com/open?id=1vUt2RjJIbfmxH5W7bbWRDDV6FGELq0q7" class="button">Algorytmy</a></li>
+									</ul>
+																		<ul class="actions">
+                                                                                <li><a href="https://drive.google.com/open?id=19v2IJHVPd6F-TDjYR3f9ZCiOZkNshENX" class="button">Angielski</a></li>
+                                                                        </ul>
+                                                                        <ul class="actions">
+                                                                                <li><a href="https://drive.google.com/open?id=1nA6n0g0o-vW5JLWM1zd38Y2QXBOfiTGu" class="button">BigData</a></li>
+                                                                        </ul>
+                                                                        <ul class="actions">
+                                                                                <li><a href="https://drive.google.com/open?id=135nJoAqS9hBLCBguYPfjSvidYUF1m4GW" class="button">Ekonomia</a></li>
+                                                                        </ul>
+                                                                        <ul class="actions">
+                                                                                <li><a href="https://drive.google.com/open?id=1g6_rzMB1GzGhcJ3ndj2o4uB3cdPD96gG" class="button">LabView</a></li>
+                                                                        </ul>
+                                                                        <ul class="actions">
+                                                                                <li><a href="https://drive.google.com/open?id=1PvapJ7xyQc2YPdtOfXKh5Y6HEyAujDs1" class="button">Programowanie gier</a></li>
+                                                                        </ul>
+																		<ul class="actions">
+                                                                                <li><a href="https://drive.google.com/open?id=1fNH9G1KjxLQLBcQZWTkfvMpl6WyxGO-F" class="button">Sieci komputerowe</a></li>
+                                                                        </ul>
+																		<ul class="actions">
+                                                                                <li><a href="https://drive.google.com/open?id=1lffQfxOtUHpWHv1ExqpyShnApybrolUC" class="button">Statystyka</a></li>
+                                                                        </ul>
+																		<ul class="actions">
+                                                                                <li><a href="https://drive.google.com/open?id=1d0wRntvXLUbMIbLJKYMIfz22Qffxtws7" class="button">Systemy wbudowane</a></li>
+                                                                        </ul>
+																		<ul class="actions">
+                                                                                <li><a href="https://drive.google.com/open?id=1TGSzCNI-u-2PxgM17pSDfzwOEAVvmZDD" class="button">Wstęp do teorii obliczalności</a></li>
+                                                                        </ul>
+																		<ul class="actions">
+                                                                                <li><a href="https://drive.google.com/open?id=1u_SmCfCOrUaVxg0yDn8GWGE9udPh6kVB6SaypRMqxas" class="button">Nagrania wykładów i zajęć</a></li>
+                                                                        </ul>
+
+								</div>
+							</div>
+						</section>
+
+					</section>
+					<section id="seven" class="wrapper style2-alt spotlights">
 						<section>
                                                         <a href="#" class="image"><img src="./site/images/01.jpg" alt="100" data-position="60% 100%" /></a>
                                                         <div class="content">
 								<div class="inner">
                                                                         <h2>Książki</h2>
-                                                                        <p>"Może chociaż z PDF-a coś zrozumieją" ~S. Kotyra</p>
+                                                                        <p>"Może chociaż z PDF-a coś zrozumieją"</p>
 									<ul class="actions">
                                                                                 <li><a href="https://drive.google.com/drive/folders/1quZ6YHewCejI3JV26Gus4q75NFbHy9Qs" class="button">Książki</a></li>
 									</ul>
