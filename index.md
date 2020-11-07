@@ -66,7 +66,7 @@
                                                                                 <li><a href="https://drive.google.com/open?id=1hWGUgQBxI-gPl-rZTe8VoTyMPKHhMbHY" class="button">OWI</a></li>
                                                                         </ul>
 																		<ul class="actions">
-                                                                                <li><a href="https://github.com/RasmusTh30wl/Programowanko" class="button">Programowanie obiektowe Java</a></li>
+                                                                                <li><a href="https://github.com/s-tyda/Programowanko" class="button">Programowanie obiektowe Java</a></li>
                                                                         </ul>
 																		<ul class="actions">
                                                                                 <li><a href="https://drive.google.com/open?id=1NSrgnc6fJQXkd9BZgzhvoBEGyvNhScy9" class="button">Systemy operacyjne</a></li>
