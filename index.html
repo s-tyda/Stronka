@@ -183,7 +183,7 @@
 		<div class="but">
 			<div class="butt">
 				<!--<a href="../index.html">Wnuczek 2.0</a>-->
-				<a href="./site/index.html">Wnuczek 2.0</a>
+				<a href="https://wnuczek.huhha.co">Wnuczek 2.0</a>
 			</div>
 		</div>
 		<div class="but">
