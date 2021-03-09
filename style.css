@@ -12,6 +12,15 @@ footer {
 	color: white;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-height: 70vh;
+    max-width: 100%;
+    overflow: hidden;
+}
+
 .dropbtn {
     background-color: #f79833;
     color: black;
@@ -45,6 +54,10 @@ footer {
 	text-decoration: none;
 }
 
+.butt p {
+    margin-block: 0;
+}
+
 .but :hover{
 	background-color: #8736a1;
 	display: block;
@@ -76,4 +89,11 @@ footer {
 
 .dropdown:hover .dropbtn {
     background-color: #8736a1;
+}
+
+#random-meme {
+    display: block;
+    object-fit: contain;
+    max-height: 100%;
+    max-width: 100%;
 }
