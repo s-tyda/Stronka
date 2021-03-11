@@ -94,6 +94,11 @@
 				<a href="">Losowy mem</a>
 			</div>
 		</div>
+		<div class="but">
+			<div class="butt">
+				<a href="https://www.paypal.me/SebastianTyda">Donate</a>
+			</div>
+		</div>
 		<br>
 		<div class="container">
 			<img id="random-meme" src="" alt="">
