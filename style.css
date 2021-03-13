@@ -75,11 +75,14 @@ footer {
 
 .meme a {
 	color: black;
-	text-decoration: none;
 }
 
 .meme p {
     margin-block: 0;
+}
+
+.test{
+	text-decoration: none;
 }
 
 .dropdown-content {
