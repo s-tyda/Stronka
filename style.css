@@ -1,7 +1,8 @@
 body {
 	text-align: center;
 	font-family: "Comic Sans MS", "Comic Sans", cursive;
-	background-color: black;
+	background: rgb(25,24,41);
+	background: linear-gradient(90deg, rgba(25,24,41,1) 0%, rgba(37,35,64,1) 50%, rgba(25,24,41,1) 100%);
 }
 
 img {
@@ -10,6 +11,11 @@ img {
 
 footer {
 	color: white;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
 }
 
 .container {
@@ -44,13 +50,16 @@ footer {
 	padding: 16px;
     font-size: 16px;
 	min-width: 120px;
-	background-color: #f79833;
-	color: black;
+	background-color: #0e0f0f;
+	color: white;
+	border: 3px solid #363636;
 	z-index: 1;
 }
 
 .butt a {
-	color: black;
+	color: white;
+	font-family: Verdana;
+	font-size: 12pt;
 	text-decoration: none;
 }
 
@@ -59,28 +68,31 @@ footer {
 }
 
 .but :hover{
-	background-color: #8736a1;
+	background-color: #404040;
 	display: block;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #22263d;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: black;
+    color: white;
+	font-family: Verdana;
+	font-size: 12pt;
     padding: 12px 16px;
+	text-align: left;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
-	background-color: #f1f1f1
+	background-color: #2c314d;
 }
 
 .dropdown:hover .dropdown-content {
