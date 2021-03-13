@@ -63,6 +63,25 @@ footer {
 	display: block;
 }
 
+.meme{
+	padding: 16px;
+    font-size: 16px;
+	min-width: 120px;
+	background-color: #f79833;
+	color: black;
+	z-index: 1;
+	cursor: pointer
+}
+
+.meme a {
+	color: black;
+	text-decoration: none;
+}
+
+.meme p {
+    margin-block: 0;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
