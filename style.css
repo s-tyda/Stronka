@@ -43,7 +43,7 @@ footer {
 	border: none;
     position: relative;
 	display: inline-block;
-	background-color: #3a6b99;
+	background-color: #0080FF
 }
 
 .but.changed {
@@ -83,7 +83,7 @@ footer {
     font-size: 16px;
 	min-width: 120px;
 	/* background-color: #f79833; */
-	background-color: #3a6b99;
+	background-color: #0080FF
 	color: black;
 	z-index: 1;
 	cursor: pointer;
