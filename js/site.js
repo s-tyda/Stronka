@@ -94,7 +94,7 @@ function ImageExist(url)
     return img.height !== 0;
 }
 
-var memeCount = 86;
+let memeCount = 86;
 const getImage = function () {
     const imgContainer = document.getElementById("random-meme");
 
@@ -102,11 +102,11 @@ const getImage = function () {
         console.log("XD");
         let img = "";
         // const randomIndex = Math.floor(Math.random() * imageURLs.length);
-        const randomIndex = Math.floor(Math.random() * memeCount) + 1;
+        let randomIndex = Math.floor(Math.random() * memeCount) + 1;
         // img += imageURLs[randomIndex];
         img += "./images/";
         if (randomIndex < 10){
-            img += '0';
+            randomIndex += '0';
         }
         img += randomIndex;
         if (ImageExist("https://tuptuptup.huhha.co/images/" + randomIndex + ".jpg")){
