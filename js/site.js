@@ -109,9 +109,9 @@ const getImage = function () {
             img += '0';
         }
         img += randomIndex;
-        if (ImageExist("./images/" + randomIndex + ".jpg")){
+        if (ImageExist("https://tuptuptup.huhha.co/images/" + randomIndex + ".jpg")){
             img += ".jpg"
-        }else if (ImageExist("./images/" + randomIndex + ".png")){
+        }else if (ImageExist("https://tuptuptup.huhha.co/images/" + randomIndex + ".png")){
             img += ".png"
         }else {
             img = "./images/01.jpg"
