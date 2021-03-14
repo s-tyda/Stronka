@@ -70,6 +70,9 @@
     --font-family: Verdana;
 }
 
+html{
+    cursor: var(--body-cursor);
+}
 
 body {
     cursor: var(--body-cursor);
@@ -97,12 +100,7 @@ footer a{
     text-decoration: none;
 }
 
-/*footer p{*/
-/*    color: var(--footer-copyright-two-numbers);*/
-/*    position: relative;*/
-/*}*/
-
-.container {
+.image {
     display: flex;
     justify-content: center;
     margin: auto;
