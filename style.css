@@ -43,16 +43,25 @@ footer {
 	border: none;
     position: relative;
 	display: inline-block;
-	border: 3px solid #363636;
+	background-color: #3a6b99;
+}
+
+.but.changed {
+	border: none;
+    position: relative;
+	display: inline-block;
+	background-color: #61b3ff;
 }
 
 .butt{
 	padding: 16px;
     font-size: 16px;
 	min-width: 120px;
-	background-color: #f79833;
+	/* background-color: #f79833; */
+	/* background-color: #3a6b99; */
 	color: black;
 	z-index: 1;
+	border: 3px solid #363636;
 }
 
 .butt a {
@@ -65,7 +74,7 @@ footer {
 }
 
 .but :hover{
-	background-color: #8736a1;
+	background-color: #61b3ff;
 	display: block;
 }
 
@@ -73,10 +82,12 @@ footer {
 	padding: 16px;
     font-size: 16px;
 	min-width: 120px;
-	background-color: #f79833;
+	/* background-color: #f79833; */
+	background-color: #3a6b99;
 	color: black;
 	z-index: 1;
-	cursor: pointer
+	cursor: pointer;
+	border: 3px solid #363636;
 }
 
 .meme a {
@@ -108,7 +119,7 @@ footer {
 }
 
 .dropdown-content a:hover {
-	background-color: #f1f1f1
+	background-color: #D8D8D8
 }
 
 .dropdown:hover .dropdown-content {
