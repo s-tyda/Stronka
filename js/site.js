@@ -1,3 +1,16 @@
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function unlockSecret(){
+	setCookie('secret_unlocked', true, 18250);
+    document.getElementById("secret").id = "not_a_secret_anymore";
+    document.documentElement.setAttribute('theme', 'snso');
+}
+
 var imageURLs = [
     "./images/01.jpg"
     , "./images/02.png"
@@ -96,6 +109,9 @@ const getImage = function () {
         const randomIndex = Math.floor(Math.random() * imageURLs.length);
         img += imageURLs[randomIndex];
         imgContainer.src = img;
+        if (img === "./images/86.jpg"){
+            unlockSecret();
+        }
     }
 }
 getImage();
