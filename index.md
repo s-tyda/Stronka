@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <!-- saved from url=(0040)http://liza.umcs.lublin.pl/~styda/site/ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Studia nie są obowiązkowe</title>
-	<link rel="stylesheet" type="text/css" href="./style.css">
-	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
-</head>
-<body>
+<html theme="" lang="pl">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Studia nie są obowiązkowe</title>
+		<link rel="stylesheet" type="text/css" href="./style.css">
+		<script type="text/javascript" src="js/themeHandler.js"></script>
+		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	</head>
+	
+	<body onload=changeTheme()>
 		<div class="dropdown">
-			<div class="but">
-				<div class="butt">
-					<a href="https://drive.google.com/open?id=11ATOeJwfC1JT83dYA5zbjGzvO_g-ddAJ" target="_blank">II semestr</a>
-				</div>
+			<div class="but" id="but1">
+				<a href="https://drive.google.com/open?id=11ATOeJwfC1JT83dYA5zbjGzvO_g-ddAJ" target="_blank">
+					<div class="butt">II semestr</div>
+				</a>
 			</div>
-			<div class="dropdown-content">
+			<div class="dropdown-content" onmouseenter="change_color(1);" onmouseleave="change_color(1);">
 				<a href="https://drive.google.com/open?id=12AzjCXHnS4GKQPhLXT77KGqCtaFHgFur" target="_blank">analiza matematyczna</a>
 				<a href="https://drive.google.com/open?id=10GsFPKuZlvkk38hOg3rEm6OR2u0InCb8" target="_blank">angielski</a>
 				<a href="https://drive.google.com/open?id=1shK3bC7ZO-gQ8gZBac6GRJ9x1xF3ECzO" target="_blank">asyko</a>
@@ -23,13 +27,14 @@
 				<a href="https://drive.google.com/open?id=1NSrgnc6fJQXkd9BZgzhvoBEGyvNhScy9" target="_blank">systemy operacyjne</a>
 			</div>
 		</div>
+		
 		<div class="dropdown">
-			<div class="but">
-				<div class="butt">
-					<a href="https://drive.google.com/open?id=1PQzrRbmJ1EIjaZi6rA3mN0XwIjhdG7Cw" target="_blank">III semestr</a>
-				</div>
+			<div class="but" id="but2">
+				<a href="https://drive.google.com/open?id=1PQzrRbmJ1EIjaZi6rA3mN0XwIjhdG7Cw" target="_blank">
+					<div class="butt">III semestr</div>
+				</a>
 			</div>
-			<div class="dropdown-content">
+			<div class="dropdown-content" onmouseenter="change_color(2);" onmouseleave="change_color(2);">
 				<a href="https://drive.google.com/open?id=1vUt2RjJIbfmxH5W7bbWRDDV6FGELq0q7" target="_blank">algorytmy</a>
 				<a href="https://drive.google.com/open?id=19v2IJHVPd6F-TDjYR3f9ZCiOZkNshENX" target="_blank">angielski</a>
 				<a href="https://drive.google.com/open?id=1nA6n0g0o-vW5JLWM1zd38Y2QXBOfiTGu" target="_blank">big data</a>
@@ -43,13 +48,14 @@
 				<a href="https://drive.google.com/open?id=1u_SmCfCOrUaVxg0yDn8GWGE9udPh6kVB6SaypRMqxas" target="_blank">nagrania wykładów i zajęć</a>
 			</div>
 		</div>
+		
 		<div class="dropdown">
-			<div class="but">
-				<div class="butt">
-					<a href="https://drive.google.com/open?id=1ogCbzQWwai4OGf5V2YErBX1sHzbIFBq0" target="_blank">IV semestr</a>
-				</div>
+			<div class="but" id="but3">
+				<a href="https://drive.google.com/open?id=1ogCbzQWwai4OGf5V2YErBX1sHzbIFBq0" target="_blank">
+					<div class="butt">IV semestr</div>
+				</a>
 			</div>
-			<div class="dropdown-content">
+			<div class="dropdown-content" onmouseenter="change_color(3);" onmouseleave="change_color(3);">
 				<a href="https://drive.google.com/open?id=1CaiI9avynAYLcLvG59l0gVC67kULa0HN" target="_blank">akceleracja</a>
 				<a href="https://drive.google.com/open?id=1CMNpV-gYp1FGh1qxwYfUobGkWPRSdJSX" target="_blank">algorytmy II</a>
 				<a href="https://drive.google.com/open?id=1Cc1rRwZ9bYM2RBPy1KXIx_P1meOznv7M" target="_blank">angielski</a>
@@ -63,13 +69,14 @@
 				<a href="https://drive.google.com/open?id=1PJRYfphbTBUgJaC9G4GF2dLdjV8HXqPW1gHVQFgmBY4" target="_blank">nagrania wykładów i zajęć</a>
 			</div>
 		</div>
+		
 		<div class="dropdown">
-			<div class="but">
-				<div class="butt">
-					<a href="https://drive.google.com/open?id=1quZ6YHewCejI3JV26Gus4q75NFbHy9Qs" target="_blank">Książki</a>
-				</div>
+			<div class="but" id="but4">
+				<a href="https://drive.google.com/open?id=1quZ6YHewCejI3JV26Gus4q75NFbHy9Qs" target="_blank">
+					<div class="butt">Książki</div>
+				</a>
 			</div>
-			<div class="dropdown-content">
+			<div class="dropdown-content" onmouseenter="change_color(4);" onmouseleave="change_color(4);">
 				<a href="https://drive.google.com/open?id=1s5Ei2hgfNMF8tKhN93_wiZ7Rh9bPfkud" target="_blank">C#</a>
 				<a href="https://drive.google.com/open?id=1JSAejWwnOl8wVjWxNbNrpac_bi4YbM93" target="_blank">C/C++</a>
 				<a href="https://drive.google.com/open?id=1MY9l5bdmsOJ82B9ev86fgjc6UaUleW7E" target="_blank">Flutter</a>
@@ -83,29 +90,47 @@
 				<a href="https://drive.google.com/open?id=1mm4vWmXUczZVc0Tk41hcS31liM27nt6p" target="_blank">TypeScript</a>
 			</div>
 		</div>
+		
 		<div class="but">
-			<div class="butt">
-				<!--<a href="../index.html">Wnuczek 2.0</a>-->
-				<a href="https://wnuczek.huhha.co">Wnuczek 2.0</a>
-			</div>
+				<a href="https://wnuczek.huhha.co">
+					<div class="butt">Wnuczek 2.0</div>
+				</a>
 		</div>
+		
 		<div id="btn-random-meme" class="but">
 			<div class="butt">
-				<a href="">Losowy mem</a>
+				<p>Losowy mem</p>
 			</div>
 		</div>
+		
 		<div class="but">
-			<div class="butt">
-				<a href="https://www.paypal.me/SebastianTyda">Donate</a>
+				<a href="https://www.paypal.me/SebastianTyda" target=_blank>
+					<div class="butt">Donate</div>
+				</a>
+		</div>
+
+		<div class="dropdown">
+			<div class="but" id="but5">
+					<div class="butt">Motywy</div>
+			</div>
+			<div class="dropdown-content" onmouseenter="change_color(5);" onmouseleave="change_color(5);">
+				<a onclick=setTheme('tydzior')>tydzior</a>
+				<a onclick=setTheme('yeti')>yeti</a>
 			</div>
 		</div>
-		<br>
+		
+		<br><br><br>
+		
 		<div class="container">
 			<img id="random-meme" src="" alt="">
 		</div>
+		
 		<!--<img src="./img.jpg" style="max-width: 100%; max-width: 100%; ">-->
-
+		
 		<script src="js/site.js"></script>
-<footer>
-	© 2020 <a href="./copyright.txt">WTFPL</a>
-</footer><span id="sbmarwbthv5"></span></body></html>
+		
+		<footer>
+			©2021 <a href="./copyright.txt">WTFPL</a>
+		</footer>
+	</body>
+</html>

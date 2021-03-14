@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <!-- saved from url=(0040)http://liza.umcs.lublin.pl/~styda/site/ -->
-<html>
-
+<html theme="" lang="pl">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>Studia nie są obowiązkowe</title>
 		<link rel="stylesheet" type="text/css" href="./style.css">
-		<script type="text/javascript" src="./js/color_change.js"></script>
+		<script type="text/javascript" src="js/themeHandler.js"></script>
 		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
 	</head>
 	
-	<body>
+	<body onload=changeTheme()>
 		<div class="dropdown">
 			<div class="but" id="but1">
-				<a href="https://drive.google.com/open?id=11ATOeJwfC1JT83dYA5zbjGzvO_g-ddAJ" target="_blank" class="test">
+				<a href="https://drive.google.com/open?id=11ATOeJwfC1JT83dYA5zbjGzvO_g-ddAJ" target="_blank">
 					<div class="butt">II semestr</div>
 				</a>
 			</div>
@@ -31,7 +30,7 @@
 		
 		<div class="dropdown">
 			<div class="but" id="but2">
-				<a href="https://drive.google.com/open?id=1PQzrRbmJ1EIjaZi6rA3mN0XwIjhdG7Cw" target="_blank" class="test">
+				<a href="https://drive.google.com/open?id=1PQzrRbmJ1EIjaZi6rA3mN0XwIjhdG7Cw" target="_blank">
 					<div class="butt">III semestr</div>
 				</a>
 			</div>
@@ -52,7 +51,7 @@
 		
 		<div class="dropdown">
 			<div class="but" id="but3">
-				<a href="https://drive.google.com/open?id=1ogCbzQWwai4OGf5V2YErBX1sHzbIFBq0" target="_blank" class="test">
+				<a href="https://drive.google.com/open?id=1ogCbzQWwai4OGf5V2YErBX1sHzbIFBq0" target="_blank">
 					<div class="butt">IV semestr</div>
 				</a>
 			</div>
@@ -73,7 +72,7 @@
 		
 		<div class="dropdown">
 			<div class="but" id="but4">
-				<a href="https://drive.google.com/open?id=1quZ6YHewCejI3JV26Gus4q75NFbHy9Qs" target="_blank" class="test">
+				<a href="https://drive.google.com/open?id=1quZ6YHewCejI3JV26Gus4q75NFbHy9Qs" target="_blank">
 					<div class="butt">Książki</div>
 				</a>
 			</div>
@@ -93,21 +92,31 @@
 		</div>
 		
 		<div class="but">
-				<a href="https://wnuczek.huhha.co" class="test">
+				<a href="https://wnuczek.huhha.co">
 					<div class="butt">Wnuczek 2.0</div>
 				</a>
 		</div>
 		
 		<div id="btn-random-meme" class="but">
-			<div class="meme">
+			<div class="butt">
 				<p>Losowy mem</p>
 			</div>
 		</div>
 		
 		<div class="but">
-				<a href="https://www.paypal.me/SebastianTyda" target=_blank class="test"> 
-					<div class="butt"> Donate </div> 
+				<a href="https://www.paypal.me/SebastianTyda" target=_blank>
+					<div class="butt">Donate</div>
 				</a>
+		</div>
+
+		<div class="dropdown">
+			<div class="but" id="but5">
+					<div class="butt">Motywy</div>
+			</div>
+			<div class="dropdown-content" onmouseenter="change_color(5);" onmouseleave="change_color(5);">
+				<a onclick=setTheme('tydzior')>tydzior</a>
+				<a onclick=setTheme('yeti')>yeti</a>
+			</div>
 		</div>
 		
 		<br><br><br>
@@ -121,8 +130,7 @@
 		<script src="js/site.js"></script>
 		
 		<footer>
-			© 2020 <a href="./copyright.txt">WTFPL</a>
+			©2021 <a href="./copyright.txt">WTFPL</a>
 		</footer>
-		<span id="sbmarwbthv5"></span>
 	</body>
 </html>

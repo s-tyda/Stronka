@@ -1,7 +1,39 @@
+:root[theme='tydzior']{
+    --background: none;
+    --background-color: black;
+    --button-color: #248dfa;
+    --button-color-on-hover: #61b3ff;
+    --button-text-color: black;
+    --button-border-color: #363636;
+    --dropdown-color: #f9f9f9;
+    --dropdown-color-on-hover: #D8D8D8;
+    --dropdown-text-color: black;
+    --footer-color: white;
+    --footer-copyright-color: #61b3ff;
+    --font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+:root[theme='yeti']{
+    --background: linear-gradient(90deg, rgba(25,24,41,1) 0%, rgba(37,35,64,1) 50%, rgba(25,24,41,1) 100%);
+    --background-color: none;
+    --button-color: #0e0f0f;
+    --button-color-on-hover: #404040;
+    --button-text-color: white;
+    --button-border-color: #363636;
+    --dropdown-color: #22263d;
+    --dropdown-color-on-hover: #2c314d;
+    --dropdown-text-color: #ffffff;
+    --footer-color: white;
+    --footer-copyright-color: #616464;
+    --font-family: Verdana;
+}
+
+
 body {
 	text-align: center;
-	font-family: "Comic Sans MS", "Comic Sans", cursive;
-	background-color: black;
+	font-family: var(--font-family);
+    background: var(--background);
+	background-color: var(--background-color);
 }
 
 img {
@@ -9,12 +41,17 @@ img {
 }
 
 footer {
-	color: white;
+	color: var(--footer-color);
 	position: absolute;
 	right: 0;
 	bottom: 0;
 	left: 0;
 	padding: 1rem;
+}
+
+footer a{
+    color: var(--footer-copyright-color);
+    text-decoration: none;
 }
 
 .container {
@@ -27,7 +64,6 @@ footer {
 }
 
 .dropbtn {
-    background-color: #f79833;
     color: black;
     padding: 16px;
     font-size: 16px;
@@ -43,91 +79,61 @@ footer {
 	border: none;
     position: relative;
 	display: inline-block;
-	background-color: #0080FF
+	background-color: var(--button-color);
 }
 
 .but.changed {
 	border: none;
     position: relative;
 	display: inline-block;
-	background-color: #61b3ff;
+	background-color: var(--button-color-on-hover);
 }
 
 .butt{
 	padding: 16px;
     font-size: 16px;
 	min-width: 120px;
-	/* background-color: #f79833; */
-	/* background-color: #3a6b99; */
-	color: black;
+	color: var(--button-text-color);
 	z-index: 1;
-	border: 3px solid #363636;
-}
-
-.butt a {
-	color: black;
-	text-decoration: none;
+	border: 3px solid var(--button-border-color);
 }
 
 .butt p {
     margin-block: 0;
 }
 
+.but a {
+    text-decoration: none;
+}
+
 .but :hover{
-	background-color: #61b3ff;
+	background-color: var(--button-color-on-hover);
 	display: block;
-}
-
-.meme{
-	padding: 16px;
-    font-size: 16px;
-	min-width: 120px;
-	/* background-color: #f79833; */
-	background-color: #0080FF
-	color: black;
-	z-index: 1;
-	cursor: pointer;
-	border: 3px solid #363636;
-}
-
-.meme a {
-	color: black;
-}
-
-.meme p {
-    margin-block: 0;
-}
-
-.test{
-	text-decoration: none;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: var(--dropdown-color);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: black;
+    color: var(--dropdown-text-color);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    cursor: pointer;
 }
 
 .dropdown-content a:hover {
-	background-color: #D8D8D8
+	background-color: var(--dropdown-color-on-hover);
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #8736a1;
 }
 
 #random-meme {
@@ -135,4 +141,8 @@ footer {
     object-fit: contain;
     max-height: 100%;
     max-width: 100%;
+}
+
+#btn-random-meme, #but5{
+    cursor: pointer;
 }
