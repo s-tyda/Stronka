@@ -1,6 +1,7 @@
 :root[theme='default']{
     --background: none;
     --background-color: black;
+    --background-repeat: none;
     --button-color: black;
     --button-color-on-hover: black;
     --button-text-color: black;
@@ -16,6 +17,7 @@
 :root[theme='tydzior']{
     --background: none;
     --background-color: black;
+    --background-repeat: none;
     --button-color: #248dfa;
     --button-color-on-hover: #61b3ff;
     --button-text-color: black;
@@ -31,6 +33,23 @@
 :root[theme='yeti']{
     --background: linear-gradient(90deg, rgba(25,24,41,1) 0%, rgba(37,35,64,1) 50%, rgba(25,24,41,1) 100%);
     --background-color: none;
+    --background-repeat: none;
+    --button-color: #0e0f0f;
+    --button-color-on-hover: #404040;
+    --button-text-color: white;
+    --button-border-color: #363636;
+    --dropdown-color: #22263d;
+    --dropdown-color-on-hover: #2c314d;
+    --dropdown-text-color: #ffffff;
+    --footer-color: white;
+    --footer-copyright-color: #616464;
+    --font-family: Verdana;
+}
+
+:root[theme='kotyra']{
+    --background: url('images/dwojecka.png');
+    --background-color: none;
+    --background-repeat: repeat;
     --button-color: #0e0f0f;
     --button-color-on-hover: #404040;
     --button-text-color: white;
@@ -158,6 +177,10 @@ footer a{
     max-width: 100%;
 }
 
-#btn-random-meme, #but5{
+#btn-random-meme, #but5 {
     cursor: pointer;
+}
+
+#secret {
+    display: none;
 }
