@@ -1,3 +1,18 @@
+:root[theme='default']{
+    --background: none;
+    --background-color: black;
+    --button-color: black;
+    --button-color-on-hover: black;
+    --button-text-color: black;
+    --button-border-color: black;
+    --dropdown-color: black;
+    --dropdown-color-on-hover: black;
+    --dropdown-text-color: black;
+    --footer-color: black;
+    --footer-copyright-color: black;
+    --font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
 :root[theme='tydzior']{
     --background: none;
     --background-color: black;
