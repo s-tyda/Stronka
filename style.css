@@ -11,6 +11,7 @@
     --dropdown-text-color: black;
     --footer-color: black;
     --footer-copyright-color: black;
+    --footer-copyright-two-numbers: black;
     --font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
@@ -22,11 +23,13 @@
     --button-color-on-hover: #61b3ff;
     --button-text-color: black;
     --button-border-color: #363636;
+    --cursor: pointer;
     --dropdown-color: #f9f9f9;
     --dropdown-color-on-hover: #D8D8D8;
     --dropdown-text-color: black;
     --footer-color: white;
     --footer-copyright-color: #61b3ff;
+    --footer-copyright-two-numbers: white;
     --font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
@@ -38,15 +41,17 @@
     --button-color-on-hover: #404040;
     --button-text-color: white;
     --button-border-color: #363636;
+    --cursor: pointer;
     --dropdown-color: #22263d;
     --dropdown-color-on-hover: #2c314d;
     --dropdown-text-color: #ffffff;
     --footer-color: white;
     --footer-copyright-color: #616464;
+    --footer-copyright-two-numbers: white;
     --font-family: Verdana;
 }
 
-:root[theme='kotyra']{
+:root[theme='snso']{
     --background: url('images/dwojecka.png');
     --background-color: none;
     --background-repeat: repeat;
@@ -54,16 +59,20 @@
     --button-color-on-hover: #404040;
     --button-text-color: white;
     --button-border-color: #363636;
+    --body-cursor: url("images/kursor.png"), default;
+    --cursor: url("images/kursor.png"), default;
     --dropdown-color: #22263d;
     --dropdown-color-on-hover: #2c314d;
     --dropdown-text-color: #ffffff;
     --footer-color: white;
     --footer-copyright-color: #616464;
+    --footer-copyright-two-numbers: red;
     --font-family: Verdana;
 }
 
 
 body {
+    cursor: var(--body-cursor);
 	text-align: center;
 	font-family: var(--font-family);
     background: var(--background);
@@ -87,6 +96,11 @@ footer a{
     color: var(--footer-copyright-color);
     text-decoration: none;
 }
+
+/*footer p{*/
+/*    color: var(--footer-copyright-two-numbers);*/
+/*    position: relative;*/
+/*}*/
 
 .container {
     display: flex;
@@ -138,6 +152,7 @@ footer a{
 
 .but a {
     text-decoration: none;
+    cursor: var(--cursor);
 }
 
 .but :hover{
@@ -159,7 +174,7 @@ footer a{
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    cursor: pointer;
+    cursor: var(--cursor);
 }
 
 .dropdown-content a:hover {
@@ -178,7 +193,7 @@ footer a{
 }
 
 #btn-random-meme, #but5 {
-    cursor: pointer;
+    cursor: var(--cursor);
 }
 
 #secret {

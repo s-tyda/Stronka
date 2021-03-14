@@ -23,7 +23,13 @@ function getCookie(cname) {
 
 function changeTheme(){
 	if (getCookie('theme') === ""){
-		setCookie('theme', 'tydzior', 18250)
+		setCookie('theme', 'tydzior', 18250);
+	}
+	if (getCookie('secret_unlocked') === "true"){
+		element = document.getElementById("secret");
+		if (element) {
+			element.id = "not_a_secret_anymore";
+		}
 	}
 	document.documentElement.setAttribute('theme', getCookie('theme'));
 }
@@ -32,6 +38,10 @@ function setTheme(value){
 	setCookie('theme', value, 18250);
 	changeTheme();
 }
+
+// export function unlockSecret(){
+// 	setCookie('secret_unlocked', true, 18250);
+// }
 
 function change_color(number){
 	if (document.getElementById("but" + number).className === "but"){
