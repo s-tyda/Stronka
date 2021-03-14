@@ -88,6 +88,31 @@ footer a{
     text-decoration: none;
 }
 
+
+@keyframes epilepsy {
+    0% {
+        background-color: transparent;
+    }
+    50% {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+.app {
+}
+
+.blinking-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
 .container {
     display: flex;
     justify-content: center;
