@@ -22,7 +22,7 @@ function getCookie(cname) {
 }
 
 function changeTheme(){
-	if (document.documentElement.getAttribute('theme') === ""){
+	if (getCookie('theme') === ""){
 		setCookie('theme', 'tydzior', 18250)
 	}
 	document.documentElement.setAttribute('theme', getCookie('theme'));
