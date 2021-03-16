@@ -48,7 +48,7 @@
     --footer-color: white;
     --footer-copyright-color: #61b3ff;
     --footer-copyright-two-numbers: white;
-    --font-family: "Comic Sans MS", "Comic Sans", cursive;
+    --font-family: "Comic Sans MS";
 }
 
 :root[theme='yeti']{
@@ -89,7 +89,7 @@
 }
 
 @font-face {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: "Comic Sans MS";
     src: url("fonts/ComicSansMS3.ttf");
 }
 
