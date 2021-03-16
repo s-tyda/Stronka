@@ -88,6 +88,16 @@
     --font-family: Verdana;
 }
 
+@font-face {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    src: url("fonts/ComicSansMS3.ttf");
+}
+
+@font-face {
+    font-family: "Verdana";
+    src: url("fonts/Verdana.ttf");
+}
+
 html{
     cursor: var(--body-cursor);
 }

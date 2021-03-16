@@ -2,3 +2,5 @@
 index.md
 # Local Netlify folder
 .netlify
+/index.html.orig
+/style.css.orig
