@@ -118,7 +118,7 @@
 					<a onclick=setTheme('tydzior')>tydzior</a>
 					<a onclick=setTheme('yeti')>yeti</a>
 					<a onclick=setTheme('wck:p')>Wojcik-_-</a>
-					<a id="secret" onclick=setTheme('snso')>kotyra</a>
+					<a id="secret" onclick=setTheme('snso')>snso</a>
 				</div>
 			</div>
 			
