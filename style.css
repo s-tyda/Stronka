@@ -15,6 +15,24 @@
     --font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
+:root[theme='wck:p']{
+    --background: none;
+    --background-color: #D0426D;
+    --background-repeat: none;
+    --button-color: #E0839F;
+    --button-color-on-hover: #EEADC0;
+    --button-text-color: black;
+    --button-border-color: black;
+    --cursor: pointer;
+    --dropdown-color: #EEADC0;
+    --dropdown-color-on-hover: #BA4F6F;
+    --dropdown-text-color: black;
+    --footer-color: black;
+    --footer-copyright-color: black;
+    --footer-copyright-two-numbers: black;
+    --font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
 :root[theme='tydzior']{
     --background: none;
     --background-color: black;
