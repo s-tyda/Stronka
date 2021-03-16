@@ -149,9 +149,6 @@ footer a{
     }
 }
 
-.app {
-}
-
 .blinking-background {
     position: absolute;
     top: 0;
@@ -235,6 +232,10 @@ footer a{
     display: block;
 }
 
+.container {
+    display: inline-block;
+}
+
 #random-meme {
     display: block;
     object-fit: contain;
@@ -248,4 +249,26 @@ footer a{
 
 #secret {
     display: none;
+}
+
+/* Prevents blue overlay when image selected */
+
+/*IE9*/
+img::selection
+{
+    background-color:transparent;
+}
+img::-moz-selection
+{
+    background-color:transparent;
+}
+img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    /*IE10*/
+    -ms-user-select: none;
+    user-select: none;
+
+    /*You just need this if you are only concerned with android and not desktop browsers.*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
