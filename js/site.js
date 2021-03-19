@@ -11,14 +11,14 @@ function unlockSecret(){
     document.documentElement.setAttribute('theme', 'snso');
 }
 
-var imageURLs = [];
+var imageURLs = JSON.parse(localStorage.getItem("memeListArray") == null ? "[]" : localStorage.getItem("memeListArray"));
 
 // Funkcja do automatycznego wczytywania memów z katalogu ./images //
 // Memy muszą być w formacie XX.png/XX.jpg //
 let checkEnabled = true;
 let finishCheck = false;
 let tempImg;
-let i=1;
+let i = localStorage.getItem("memeIterationNumber") == null ? 1 : localStorage.getItem("memeIterationNumber"); //Starting iteration from saved number or from 1 if first visit
 
 const loadImages = () => {
     if(finishCheck) {
@@ -56,6 +56,8 @@ const doesNotExist = () => {
         tempImg.onerror = doesNotExist;
         return;
     }
+    localStorage.setItem("memeIterationNumber", i)
+    localStorage.setItem("memeListArray", JSON.stringify(imageURLs));
     finishCheck = true;
 }
 
