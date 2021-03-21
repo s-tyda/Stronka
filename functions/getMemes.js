@@ -1,6 +1,6 @@
 var fs = require('fs');
 // var files = fs.readdirSync('./images/memes/');
-var files = fs.readdirSync('/var/runtime/build');
+var files = fs.readdirSync('/var/runtime/build/Release');
 // var directories = []
 // for (var i = 0; i < files.length; i++){
 //     try{
