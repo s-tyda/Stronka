@@ -3,14 +3,14 @@ const readline = require('readline');
 var files = []
 
 const rl = readline.createInterface({
-    input: fs.createReadStream('./assets/memes.txt'),
+    input: fs.createReadStream(require.resolve('./assets/memes.txt')),
     output: process.stdout,
     terminal: false
 });
 
 rl.on('line', (line) => {
     console.log(line);
-    files.push(line)
+    files.push(line);
 });
 // var files = fs.readdirSync('./images/memes/');
 // var files = fs.readdirSync('/var/runtime/build/Release');
