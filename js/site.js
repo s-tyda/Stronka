@@ -10,7 +10,9 @@ function unlockSecret(){
     document.getElementById("secret").id = "not_a_secret_anymore";
     document.documentElement.setAttribute('theme', 'snso');
 }
-
+var fs = require('fs');
+var files = fs.readdirSync('/images/memes/');
+// console.log(files)
 var imageURLs = JSON.parse(localStorage.getItem("memeListArray") == null ? "[]" : localStorage.getItem("memeListArray"));
 
 // Funkcja do automatycznego wczytywania memów z katalogu ./images //
@@ -24,6 +26,7 @@ const loadImages = () => {
     if(finishCheck) {
         clearInterval(tempInterval);
         console.log(`Loaded ${i - 1} memes`);
+        console.log(files);
         getImage();
         return;
     }
