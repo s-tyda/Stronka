@@ -1,8 +1,8 @@
-var fs = require('fs');
+const fs = require('fs');
 // var files = fs.readdirSync('./images/memes/');
 // var files = fs.readdirSync('/var/runtime/build/Release');
-var files = fs.readFileSync(require.resolve('./assets/memes.txt'));
-files = files.split(/\n/);
+const files = fs.readFileSync(require.resolve('./assets/memes.txt'));
+// const memes = files.split(/\n/);
 // var directories = []
 // for (var i = 0; i < files.length; i++){
 //     try{
