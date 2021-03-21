@@ -23,7 +23,7 @@ let i = localStorage.getItem("memeIterationNumber") == null ? 1 : localStorage.g
 
 const loadImages = () => {
 
-    // fetch("")
+    // fetch("https://tup.huhha.co/.netlify/functions/getMemes")
 
     if(finishCheck) {
         clearInterval(tempInterval);
