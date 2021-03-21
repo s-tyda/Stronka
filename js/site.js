@@ -15,7 +15,7 @@ var imageURLs = []
 
 fetch('./.netlify/functions/getMemes')
     .then(res => res.json())
-    .then(data => imageURLs = data)
+    .then(data => imageURLs = data.memes)
     .then(() => console.log(imageURLs))
 
 // var imageURLs = JSON.parse(localStorage.getItem("memeListArray") == null ? "[]" : localStorage.getItem("memeListArray"));
