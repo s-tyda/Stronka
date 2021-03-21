@@ -16,6 +16,7 @@ var imageURLs = []
 fetch('./.netlify/functions/getMemes')
     .then(res => res.json())
     .then(data => imageURLs = data.memes)
+    .then(() => getImage())
 
 // var imageURLs = JSON.parse(localStorage.getItem("memeListArray") == null ? "[]" : localStorage.getItem("memeListArray"));
 
@@ -95,7 +96,6 @@ const getImage = function () {
         }
     }
 }
-getImage();
 
 let counter = 0;
 const clickCounter = function () {
