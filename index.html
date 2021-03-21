@@ -6,9 +6,15 @@
 		<link rel="stylesheet" type="text/css" href="./style.css">
 		<script type="text/javascript" src="js/themeHandler.js"></script>
 		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	</head>
 	
 	<body onload=changeTheme()>
+		<script>
+			$.getJSON('./somedir', data => {
+				console.log(data); //["doc1.jpg", "doc2.jpg", "doc3.jpg"]
+			});
+		</script>
 		<div class="app">
 			<div class="dropdown">
 				<div class="but" id="but1">
