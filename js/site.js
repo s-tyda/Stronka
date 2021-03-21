@@ -18,61 +18,6 @@ fetch('./.netlify/functions/getMemes')
     .then(data => imageURLs = data.memes)
     .then(() => getImage())
 
-// var imageURLs = JSON.parse(localStorage.getItem("memeListArray") == null ? "[]" : localStorage.getItem("memeListArray"));
-
-// Funkcja do automatycznego wczytywania memów z katalogu ./images //
-// Memy muszą być w formacie XX.png/XX.jpg //
-// let checkEnabled = true;
-// let finishCheck = false;
-// let tempImg;
-// let i = localStorage.getItem("memeIterationNumber") == null ? 1 : localStorage.getItem("memeIterationNumber"); //Starting iteration from saved number or from 1 if first visit
-//
-// const loadImages = () => {
-//
-//     // fetch("https://tup.huhha.co/.netlify/functions/getMemes")
-//
-//     if(finishCheck) {
-//         clearInterval(tempInterval);
-//         console.log(`Loaded ${i - 1} memes`);
-//         console.log(files);
-//         getImage();
-//         return;
-//     }
-//
-//     if(checkEnabled) {
-//         checkEnabled = false;
-//
-//         tempImg = new Image();
-//         tempImg.src = `./images/memes/${i<10 ? '0' + i : i}.jpg`;
-//         tempImg.onload = doesExist;
-//         tempImg.onerror = doesNotExist;
-//     }
-// }
-// let tempInterval = setInterval(loadImages, 1);
-//
-// const doesExist = () => {
-//     let t = tempImg.src.split('/');
-//     imageURLs.push(`./${t[t.length-3]}/${t[t.length-2]}/${t[t.length-1]}`);
-//     i++;
-//     //tempImg = null;
-//     checkEnabled = true;
-// }
-//
-// const doesNotExist = () => {
-//     if(tempImg.src.includes("jpg")) {
-//
-//         tempImg = new Image();
-//         tempImg.src = `./images/memes/${i<10 ? '0' + i : i}.png`;
-//         tempImg.onload = doesExist;
-//         tempImg.onerror = doesNotExist;
-//         return;
-//     }
-//     localStorage.setItem("memeIterationNumber", i)
-//     localStorage.setItem("memeListArray", JSON.stringify(imageURLs));
-//     finishCheck = true;
-// }
-
-
 const nowySekrecikOdStaszka = () => {
     if(document.getElementById("jd").classList.contains("jebac_disa")) {
         playAudio("audio/jd.mp3", false);
