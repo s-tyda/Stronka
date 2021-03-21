@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     # Only run on main repo on and PRs that match the main repo.
     if: |
-      github.repository == 'example/example_repo' &&
+      github.repository == 's-tyda/Stronka' &&
       (github.event_name != 'pull_request' ||
        github.event.pull_request.head.repo.full_name == github.repository)
     steps:
@@ -41,7 +41,7 @@ jobs:
         if: |
           github.event_name != 'pull_request' &&
           steps.calibre.outputs.markdown != ''
-        uses: peter-evans/create-pull-request@v3
+        uses: s-tyda/create-pull-request@v3
         with:
           title: Auto Compress Images
           branch-suffix: timestamp
