@@ -5,9 +5,30 @@ function setCookie(cname, cvalue, exdays) {
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) === ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) === 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
 function unlockSecret(){
-	setCookie('secret_unlocked', true, 18250);
-    document.getElementById("secret").id = "not_a_secret_anymore";
+    if (getCookie('secret_unlocked') === "") {
+        setCookie('secret_unlocked', true, 18250);
+    }
+    element = document.getElementById("secret");
+    if (element) {
+        element.id = "not_a_secret_anymore";
+    }
     document.documentElement.setAttribute('theme', 'snso');
 }
 
