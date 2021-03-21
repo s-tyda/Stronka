@@ -1,17 +1,17 @@
 const fs = require('fs');
 const readline = require('readline');
-var files = []
+var files = fs.readFileSync(require.resolve('./assets/memes.txt')).toString().split("\n");
 
-const rl = readline.createInterface({
-    input: fs.createReadStream(require.resolve('./assets/memes.txt')),
-    output: process.stdout,
-    terminal: false
-});
-
-rl.on('line', (line) => {
-    console.log(line);
-    files.push(line);
-});
+// const rl = readline.createInterface({
+//     input: fs.createReadStream(require.resolve('./assets/memes.txt')),
+//     output: process.stdout,
+//     terminal: false
+// });
+//
+// rl.on('line', (line) => {
+//     console.log(line);
+//     files.push(line);
+// });
 // var files = fs.readdirSync('./images/memes/');
 // var files = fs.readdirSync('/var/runtime/build/Release');
 // const files = fs.readFileSync(require.resolve('./assets/memes.txt'));
