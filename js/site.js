@@ -11,8 +11,14 @@ function unlockSecret(){
     document.documentElement.setAttribute('theme', 'snso');
 }
 
-var test = []
-var imageURLs = JSON.parse(localStorage.getItem("memeListArray") == null ? "[]" : localStorage.getItem("memeListArray"));
+var imageURLs = []
+
+fetch('./.netlify/functions/getMemes')
+    .then(res => res.json())
+    .then(data => imageURLs = data)
+    .then(() => console.log(imageURLs))
+
+// var imageURLs = JSON.parse(localStorage.getItem("memeListArray") == null ? "[]" : localStorage.getItem("memeListArray"));
 
 // Funkcja do automatycznego wczytywania memów z katalogu ./images //
 // Memy muszą być w formacie XX.png/XX.jpg //
