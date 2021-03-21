@@ -6,11 +6,13 @@ name: Generate memes file
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    paths: 
-    - 'list_memes.py'
+    paths:
+      - './list_memes.py'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+    paths:
+      - './list_memes.py'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -22,7 +24,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
       - name: Set up Python 3.8
         uses: actions/setup-python@v2
         with:
@@ -30,3 +32,13 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: python list_memes.py
+
+       - name: Commit and Push
+       run: |
+         git config --global user.name "github-actions[bot]"
+         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+         # use account 'github-actions[bot]' to set the git config
+
+         git add -A
+         git commit -m "Generated memes.txt"
+         git push
