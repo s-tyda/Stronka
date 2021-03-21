@@ -23,7 +23,7 @@ let i = localStorage.getItem("memeIterationNumber") == null ? 1 : localStorage.g
 const loadImages = () => {
     if(finishCheck) {
         clearInterval(tempInterval);
-        console.log(`Loaded ${i} memes`);
+        console.log(`Loaded ${i - 1} memes`);
         getImage();
         return;
     }
@@ -32,7 +32,7 @@ const loadImages = () => {
         checkEnabled = false;
 
         tempImg = new Image();
-        tempImg.src = `./images/${i<10 ? '0' + i : i}.jpg`;
+        tempImg.src = `./images/memes/${i<10 ? '0' + i : i}.jpg`;
         tempImg.onload = doesExist;
         tempImg.onerror = doesNotExist;
     }
@@ -41,7 +41,7 @@ let tempInterval = setInterval(loadImages, 1);
 
 const doesExist = () => {
     let t = tempImg.src.split('/');
-    imageURLs.push(`./${t[t.length-2]}/${t[t.length-1]}`);
+    imageURLs.push(`./${t[t.length-3]}/${t[t.length-2]}/${t[t.length-1]}`);
     i++;
     //tempImg = null;
     checkEnabled = true;
@@ -51,7 +51,7 @@ const doesNotExist = () => {
     if(tempImg.src.includes("jpg")) {
 
         tempImg = new Image();
-        tempImg.src = `./images/${i<10 ? '0' + i : i}.png`;
+        tempImg.src = `./images/memes/${i<10 ? '0' + i : i}.png`;
         tempImg.onload = doesExist;
         tempImg.onerror = doesNotExist;
         return;
@@ -80,7 +80,7 @@ const getImage = function () {
         const randomIndex = Math.floor(Math.random() * imageURLs.length);
         img += imageURLs[randomIndex];
         imgContainer.src = img;
-        if (img === "./images/86.jpg"){
+        if (img === "./images/memes/86.jpg"){
             unlockSecret();
         }
     }
