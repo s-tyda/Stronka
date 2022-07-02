@@ -54,15 +54,10 @@
 					</a>
 				</div>
 				<div class="dropdown-content" onmouseenter="change_color(3);" onmouseleave="change_color(3);">
-					<a href="https://drive.google.com/open?id=1CaiI9avynAYLcLvG59l0gVC67kULa0HN" target="_blank">akceleracja</a>
-					<a href="https://drive.google.com/open?id=1CMNpV-gYp1FGh1qxwYfUobGkWPRSdJSX" target="_blank">algorytmy II</a>
 					<a href="https://drive.google.com/open?id=1Cc1rRwZ9bYM2RBPy1KXIx_P1meOznv7M" target="_blank">angielski</a>
-					<a href="https://drive.google.com/open?id=1CXrSu2rzOGZFpePns1Nalu5yvnhPmwWO" target="_blank">elementy grafiki</a>
 					<a href="https://drive.google.com/open?id=1COkiV1IyzeaQZOhmNXLBY1AJOJd2_hd9" target="_blank">inżynieria oprogramowania</a>
 					<a href="https://drive.google.com/open?id=1CRLw-RqCizNpNKv69bASVjzAa4_YujnH" target="_blank">języki i paradygmaty</a>
 					<a href="https://drive.google.com/open?id=1Ca8htPLXyVgNJEjt_ySNJlTDoKAbYb1T" target="_blank">python</a>
-					<a href="https://drive.google.com/open?id=1CbpUXqYyCGC9HkuqxvBYg82XvZfkKuPe" target="_blank">robotyka</a>
-					<a href="https://drive.google.com/open?id=1CabbJj_3PEY6YQudSdf_JUWTJdiZ8itG" target="_blank">routing</a>
 					<a href="https://drive.google.com/open?id=1CVxtq0hXYyV7GT6AInfTvnJsrM51fRRu" target="_blank">wstęp do ai</a>
 					<a href="https://drive.google.com/open?id=1PJRYfphbTBUgJaC9G4GF2dLdjV8HXqPW1gHVQFgmBY4" target="_blank">nagrania wykładów i zajęć</a>
 				</div>
